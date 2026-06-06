@@ -2,21 +2,19 @@ function explore() {
     const topic = document.getElementById("topicInput").value;
 
     const rabbitHoles = [
-        "History",
-        "Technology",
-        "Mysteries",
-        "Science",
-        "Ancient Civilizations"
+        "Origin Story",
+        "Controversies",
+        "Hidden Connections",
+        "Biggest Moments",
+        "Weird Facts"
     ];
 
     let output = `<h2>Exploring: ${topic}</h2>`;
-    output += "<h3>Related Rabbit Holes:</h3><ul>";
+    output += `<h3>Rabbit Holes:</h3>`;
 
     rabbitHoles.forEach(hole => {
-        output += `<li>${hole}</li>`;
+        output += `<p>🕳️ ${hole}</p>`;
     });
-
-    output += "</ul>";
 
     document.getElementById("results").innerHTML = output;
 }
